@@ -1,0 +1,33 @@
+$mode: "default";
+
+$mc: #e8cf68;
+$sc: #c63e4a;
+
+
+$gr: #aaa;
+$black: #444;
+
+
+$white: white;
+
+// $white1: #eee;
+$white1: linear-gradient(35deg, $mc, $white, $sc);
+
+$white2: #f7f7f7;
+
+// %background
+// %backgroundRadial
+
+
+%background {
+	background: $white1 !important;
+}
+
+%backgroundRadial {
+	background: url("../img/main/dotted1.png"),
+		radial-gradient(circle, rgba($white, 1) 50%, rgba($white2, 0.4) 70%, rgba($mc, 0.4) 100%);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-blend-mode: multiply;
+}

@@ -1,0 +1,27 @@
+@import "./sass/Lang/Ar";
+
+// @import "./sass/Mode/Default";
+@import "./sass/Mode/Dark";
+
+@import "./sass/Helpers/Variables";
+@import "./sass/Helpers/Mixins";
+@import "./sass/Helpers/Extend";
+@import "./sass/Helpers/Functions";
+
+@import "./sass/Layout/Cover";
+@import "./sass/Layout/Fonts";
+@import "./sass/Layout/Grid";
+@import "./sass/Layout/Scroll";
+@import "./sass/Layout/UpArrow";
+
+@import "./sass/Layout/Style4AllElement";
+
+@import "./sass/Components/Button";
+
+@import "./sass/Layout/Nav";
+@import "./sass/Pages/Home";
+@import "./sass/Pages/Products";
+@import "./sass/Layout/Footer";
+
+//sass --watch L:\slrPlusProject\public\assets\frontend\sass:L:\slrPlusProject\public\assets\frontend\css
+//sass --watch L:\slrPlusProject\public\assets\frontend\sass:L:\slrPlusProject\public\assets\frontend\css --style compressed

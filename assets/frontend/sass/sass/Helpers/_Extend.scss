@@ -1,0 +1,134 @@
+@mixin shadow {
+	box-shadow: 0px 0px 10px rgba(black, 0.16);
+}
+
+%borderWithShadow {
+	border: $gr solid;
+	border-width: 1px;
+	border-radius: 15px;
+	@media screen and (min-width: 992px) {
+		border-radius: 25px;
+		@include box-shadow(0px, 3px, $gr);
+	}
+}
+// carousel in header
+@mixin carousel {
+	.carousel {
+		margin-top: 5px;
+
+		.item {
+
+
+			text-align: center;
+
+			overflow: hidden;
+			@media screen and (min-width: 992px) {
+				padding: 10px;
+			}
+			img {
+				width: 99%;
+				height: 100%;
+				object-fit: cover;
+				margin: auto;
+
+				@extend %borderWithShadow;
+			}
+		}
+		
+	}
+
+
+
+}
+// old
+// @mixin carousel {
+
+// 	.owl-carousel {
+// 		// overflow: hidden;
+// 		// border:2px solid red;
+// 		margin-top: 5px;
+
+// 		.item {
+// 			// border:2px solid yellow;
+// 			// min-width: 100% !important;
+
+// 			text-align: center;
+
+// 			overflow: hidden;
+
+// 			display: block;
+// 			@media screen and (min-width: 992px) {
+// 				padding: 10px;
+// 			}
+// 			img {
+// 				width: 99%;
+// 				height: 100%;
+// 				object-fit: cover;
+// 				margin: auto;
+
+// 				@extend %borderWithShadow;
+// 			}
+// 		}
+// 	}
+// 	.owl-stage-outer {
+// 		margin: 0px !important;
+// 		padding: 0px !important;
+// 		// overflow: hidden;
+// 		// text-align: center;
+// 		// margin: auto;
+// 		// border-radius: 5px;
+// 		// border:1px solid blue;
+// 	}
+// 	.owl-nav {
+
+// 		button.owl-next,
+// 		button.owl-prev {
+// 			font-size: 60px !important;
+// 			position: absolute;
+// 			top: 45%;
+// 			right: 15px !important;
+// 			transform: translateY(-50%);
+// 			color: white;
+// 			@include text-shadow(2px, 3px, $sc);
+// 			transition: 0.3s all linear;
+// 			display: block;
+// 			background-color: transparent !important;
+// 			@media screen and (min-width: 1200px) {
+// 				font-size: 70px !important;
+// 			}
+// 			&:hover {
+// 				@include text-shadow(3px, 5px, $sc);
+// 			}
+// 		}
+
+// 		button.owl-next {
+// 			left: 15px;
+// 			right: initial !important;
+// 		}
+// 	}
+
+// 	// .owl-dots {
+// 	// 	display: none;
+// 	// 	text-align: center;
+// 	// 	transform: translateY(-150%);
+// 	// 	button {
+// 	// 		border: 2px solid $sc;
+// 	// 		@include shadow;
+// 	// 		width: 10px;
+// 	// 		height: 10px;
+// 	// 		padding: 3px !important;
+
+// 	// 		@media screen and (min-width: 768px) {
+// 	// 			width: 15px;
+// 	// 			height: 15px;
+// 	// 			padding: 3px !important;
+// 	// 		}
+
+// 	// 		border-radius: 50%;
+// 	// 		margin: 0px 5px 3px;
+// 	// 	}
+// 	// 	.active {
+// 	// 		background-color: $sc !important;
+// 	// 	}
+// 	// }
+// }

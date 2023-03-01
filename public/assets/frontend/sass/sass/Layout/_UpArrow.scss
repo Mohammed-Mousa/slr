@@ -1,0 +1,33 @@
+.fixed-whatsapp-icon {
+	position: fixed;
+	cursor: pointer;
+	// border-radius: 13px;
+	overflow: hidden;
+	z-index: 1000;
+	overflow-x: initial !important;
+
+	bottom: 30px;
+	left: 20px;
+
+	@media screen and (min-width: 768px) {
+		bottom: 30px;
+		left: 25px;
+	}
+	a{
+		display: inline-block;
+		transition: .3s all linear;
+		&:hover{
+			transform:scale(.93);
+		}
+	}
+
+	img {
+		display:inline-block;
+		height: 65px;
+		width: 65px;
+		@media screen and (min-width: 768px) {
+			height: 85px;
+			width: 85px;
+		}
+	}
+}

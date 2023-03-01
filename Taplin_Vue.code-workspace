@@ -1,0 +1,31 @@
+{
+	"folders": [
+		{
+			"name": "Taplin_Vue",
+			"path": "W:\\Taplin_Vue"
+		},
+		{
+			"name": "Invoices",
+			"path": "..\\Invoices"
+		},
+		{
+			"name": "Anadolu_Kudus",
+			"path": "..\\Anadolu_Kudus"
+		},
+		{
+			"name": "shahed",
+			"path": "..\\shahed"
+		},
+		{
+			"name": "sass",
+			"path": "..\\shahed_Files\\sass"
+		},
+		{
+			"name": "slrPlusProject",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Vue_Tutorial"
+	}
+}

@@ -1,0 +1,28 @@
+/*
+// *************************
+//   Layer Above Body
+// *************************
+*/
+
+#cover {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    z-index: 10005;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*
+		// *************************
+		//         Body
+		// *************************
+		*/
+
+#body {
+    opacity: 0;
+}

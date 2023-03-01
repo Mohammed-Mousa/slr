@@ -1,0 +1,92 @@
+/* ******************* */
+/*         Nav         */
+/* ******************* */
+.offcanvas{
+	background: $white;
+}
+nav.navbar {
+	@extend %background;
+	border-radius: 0px 0px 25px 25px;
+	border: #aaa solid;
+	border-width: 0px 0px 2px 0px;
+
+	.navbar-toggler {
+		border: 0px !important;
+		&:focus {
+			box-shadow: none !important;
+		}
+	}
+}
+.nav-link {
+	color: $black;
+	font-weight: bold;
+	font-size: 21px;
+}
+/* btn dm */
+.dark-mode {
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+.cont-darkmode {
+	cursor: pointer;
+}
+
+@media screen and (max-width: 991px) {
+	.cont-darkmode {
+		margin: 0px 15px;
+	}
+}
+
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
+
+.label {
+	width: 50px;
+	height: 24px;
+	background-color: $black;
+	cursor: pointer;
+	display: flex;
+	border-radius: 50px;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 5px;
+	position: relative;
+	transform: scale(1.1);
+	margin-bottom: 0px;
+}
+
+@media screen and (min-width: 992px) {
+	.label {
+		transform: scale(1.35);
+		margin: 0px 20px;
+	}
+}
+
+.ball {
+	width: 20px;
+	height: 20px;
+	background-color: $white;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	border-radius: 50%;
+	transition: transform 0.2s linear;
+}
+
+/*  target the elemenent after the label*/
+.checkbox:checked + .label .ball {
+	transform: translateX(24px);
+}
+
+.fa-moon {
+	color: pink;
+}
+
+.fa-sun {
+	color: yellow;
+}
+
+/* end dm btn */
